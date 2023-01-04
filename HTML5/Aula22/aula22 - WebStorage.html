@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Curso de HTML 5 - localStorage e sessionStorage</title>
+    <script>
+        localStorage.setItem("Nome","Paulo");
+        localStorage.setItem("Time","Vasco"); // localStorage se mantém armazenado 
+        
+        sessionStorage.setItem("Estado","Rio Grande do Sul") // Não se mantém armazanado
+
+        localStorage.removeItem("Nome"); // remove uma chave específica
+
+        localStorage.clear(); // remove todas as chaves 
+        
+        var vnome = localStorage.getItem("Nome");
+        var vtime = localStorage.getItem("Time");
+       
+        alert(vtime)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
